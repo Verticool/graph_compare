@@ -1,0 +1,66 @@
+.graphCompare
+    padding-top: 100px
+    margin-left: 200px
+    &__grid
+        margin: 0 auto
+        width: 868px
+        height: 117px
+        display: grid
+        grid-template: repeat(7, 15px) / repeat(51, 15px)
+        grid-auto-flow: column
+        gap: 2px
+        grid-area: 2 / 2 / 2 / 2
+    &__wrapper
+        display: grid
+        row-gap: 5px
+        grid-template: 15px 15px 117px 20px/ 10px 900px
+    &__graph
+        cursor: pointer
+        display: block
+        height: 15px
+        width: 15px
+        background-color: #EDEDED
+        &:hover
+            border: 1px solid rgba(0, 0, 0, 0.50)
+        &_1lvl
+            background-color: #EDEDED
+        &_2lvl
+            background-color: #ACD5F2
+        &_3lvl
+            background-color: #7FA8C9
+        &_4lvl
+            background-color: #527BA0
+        &_5lvl
+            background-color: #254E77
+    &__months
+        grid-area: 1 / 1 / 1 / 2
+        color: #959494
+        font-family: Inter
+        font-size: 14px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        width: 800px
+        display: flex
+    &__months>div
+        margin-left: 43px
+    &__days
+        grid-area: 2 / 1 / 2 / 2
+        color: #959494
+        font-family: Inter
+        font-size: 14px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        height: 80px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &__faq
+        width: 250px
+        height: 15px
+        grid-area: 4 / 1 / 4 / 1
+        display: flex
+        justify-content: space-between
+    &__text
+        padding: 0 10px 0 10px
